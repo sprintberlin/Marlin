@@ -277,7 +277,7 @@ G29_TYPE GcodeSuite::G29() {
   if (!g29_in_progress) {
 
     #if ENABLED(DUAL_X_CARRIAGE)
-      if (active_extruder != 0) tool_change(0);
+      // GS if (active_extruder != 0) tool_change(0);
     #endif
 
     #if EITHER(PROBE_MANUALLY, AUTO_BED_LEVELING_LINEAR)
