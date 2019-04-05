@@ -50,3 +50,8 @@
 #endif
 
 #include "pins_RAMPS.h"
+
+// GS Spindle ToDo configure PINS
+#define SPINDLE_LASER_PWM_PIN     2  // MUST BE HARDWARE PWM
+#define SPINDLE_LASER_ENABLE_PIN 15  // Pin should have a pullup!
+#define SPINDLE_DIR_PIN          19
