@@ -328,12 +328,15 @@ void _lcd_preheat(const int16_t endnum, const int16_t temph, const int16_t tempb
     START_MENU();
     MENU_BACK(MSG_MAIN);
     if (spindle_laser_enabled()) {
+    /* GS deactivated
       #if ENABLED(SPINDLE_LASER_PWM)
         MENU_ITEM_EDIT_CALLBACK(int3, MSG_LASER_POWER, &spindle_laser_power, SPEED_POWER_MIN, SPEED_POWER_MAX, update_spindle_laser_power);
       #endif
       MENU_ITEM(function, MSG_LASER_OFF, _lcd_spindle_laser_off);
     }
+
     else {
+        */
       MENU_ITEM(function, MSG_LASER_ON, _lcd_spindle_laser_on);
       #if SPINDLE_DIR_CHANGE
         MENU_ITEM(function, MSG_SPINDLE_REVERSE, _lcd_spindle_on_reverse);
