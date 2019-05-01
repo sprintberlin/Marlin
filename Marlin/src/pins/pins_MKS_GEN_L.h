@@ -53,5 +53,4 @@
 
 // GS Spindle ToDo assign correct pins
 #define SPINDLE_LASER_PWM_PIN     2  // MUST BE HARDWARE PWM
-#define SPINDLE_LASER_ENABLE_PIN  6  // Pin should have a pullup!
-#define SPINDLE_DIR_PIN          19
+#define SPINDLE_LASER_ENABLE_PIN  HEATER_BED_PIN  // Pin should have a pullup!
