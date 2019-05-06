@@ -1918,7 +1918,7 @@
 #define SPINDLE_LASER_ENABLE // GS https://github.com/McUtty/Marlin2.0-Laser-with-M3-M4-M5-G-Code-for-Power
 #if ENABLED(SPINDLE_LASER_ENABLE)
 
-  #define SPINDLE_LASER_ENABLE_INVERT   false  // set to "true" if the on/off function is reversed
+  #define SPINDLE_LASER_ENABLE_INVERT   true  // GS muss auf true stehen // set to "true" if the on/off function is reversed
   #define SPINDLE_LASER_PWM             true   // set to true if your controller supports setting the speed/power
   #define SPINDLE_LASER_PWM_INVERT      false   // GS set to "true" if the speed/power goes up when you want it to go slower
   #define SPINDLE_LASER_POWERUP_DELAY   1   // GS delay in milliseconds to allow the spindle/laser to come up to speed/power
@@ -1936,10 +1936,10 @@
    *  set the following for your controller (ALL MUST BE SET)
    */
 
-  #define SPEED_POWER_SLOPE     0.3922 // GS
+  #define SPEED_POWER_SLOPE     1 // GS
   #define SPEED_POWER_INTERCEPT  0
-  #define SPEED_POWER_MIN     10 // GS
-  #define SPEED_POWER_MAX    255 // GS SuperPID router controller 0 - 30,000 RPM
+  #define SPEED_POWER_MIN     1 // GS
+  #define SPEED_POWER_MAX    255 // GS
 
   //#define SPEED_POWER_SLOPE      0.3922
   //#define SPEED_POWER_INTERCEPT  0

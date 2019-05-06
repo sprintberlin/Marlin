@@ -248,8 +248,8 @@
     #define SPINDLE_LASER_PWM_PIN     6   // MUST BE HARDWARE PWM
     #define SPINDLE_DIR_PIN           5
   #elif !(BOTH(ULTRA_LCD, NEWPANEL) && ANY(PANEL_ONE, VIKI2, miniVIKI, MINIPANEL, REPRAPWORLD_KEYPAD))  // try to use AUX 2
-    #define SPINDLE_LASER_ENABLE_PIN 40   // Pin should have a pullup/pulldown!
-    #define SPINDLE_LASER_PWM_PIN    44   // MUST BE HARDWARE PWM
+    #define SPINDLE_LASER_ENABLE_PIN HEATER_BED_PIN   // GS Pin should have a pullup/pulldown!
+    #define SPINDLE_LASER_PWM_PIN    44   // GS AUX 2 MUST BE HARDWARE PWM
     #define SPINDLE_DIR_PIN          65
   #endif
 #endif
